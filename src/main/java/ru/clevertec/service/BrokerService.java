@@ -27,6 +27,10 @@ public class BrokerService {
         return broker;
     }
 
+    public Map<String, Integer> getLastReadIndex() {
+        return lastReadIndex;
+    }
+
     public void startConsuming(String topicName,
                                int maxMessages,
                                CountDownLatch latch,
